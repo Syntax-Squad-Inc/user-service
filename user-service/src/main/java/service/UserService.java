@@ -1,9 +1,19 @@
+package service;
+import dto.UserRequestDTO;
+import jakarta.validation.Valid;
+import org.springframework.stereotype.Service;
+import java.util.List;
+import entity.User;
+import lombok.RequiredArgsConstructor;
+import repository.UserRepository;
+
+
 @Service
 @RequiredArgsConstructor
 public class UserService {
     private final UserRepository userRepository;
 
-    public UserResponseDTO createUser(UserRequestDTO request) {
+    public UserResponseDTO createUser(@Valid UserRequestDTO request) {
         User user = User.builder()
                 .email(request.getEmail())
                 .username(request.getUsername())

@@ -1,11 +1,15 @@
+package dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserRequestDTO {
-    @NotBlank
-    private String email;
-
-    @NotBlank
     private String username;
-
-    @NotBlank
+    private String email;
     private String password;
 }
+
