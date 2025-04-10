@@ -1,11 +1,12 @@
-package service;
-import dto.UserRequestDTO;
+package com.Syntax_Squad_Inc.user_service.Service;
+import com.Syntax_Squad_Inc.user_service.dto.UserRequestDTO;
+import com.Syntax_Squad_Inc.user_service.dto.UserResponseDTO;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Service;
 import java.util.List;
-import entity.User;
+import com.Syntax_Squad_Inc.user_service.entity.User;
 import lombok.RequiredArgsConstructor;
-import repository.UserRepository;
+import com.Syntax_Squad_Inc.user_service.repository.UserRepository;
 
 
 @Service

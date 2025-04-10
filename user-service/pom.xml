@@ -15,7 +15,7 @@
 	<groupId>com.Syntax-Squad-Inc</groupId>
 	<artifactId>user-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>user-service</name>
+	<name>user-Service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

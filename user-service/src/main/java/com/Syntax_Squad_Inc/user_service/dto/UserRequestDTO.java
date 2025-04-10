@@ -1,4 +1,4 @@
-package dto;
+package com.Syntax_Squad_Inc.user_service.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

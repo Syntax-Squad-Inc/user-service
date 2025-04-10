@@ -1,4 +1,4 @@
-package entity;
+package com.Syntax_Squad_Inc.user_service.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
