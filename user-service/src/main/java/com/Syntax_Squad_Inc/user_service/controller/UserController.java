@@ -32,7 +32,6 @@ public class UserController {
     public ResponseEntity<List<UserResponseDTO>> getAllUsers() {
         return ResponseEntity.ok(UserService.getAllUsers());
     }
-
     @PutMapping("/{id}")
     public ResponseEntity<UserResponseDTO> updateUser(@PathVariable Long id,
                                                       @RequestBody @Valid UserRequestDTO request) {
