@@ -1,5 +1,4 @@
 package com.Syntax_Squad_Inc.user_service.controller;
-
 import com.Syntax_Squad_Inc.user_service.dto.UserResponseDTO;
 
 import com.Syntax_Squad_Inc.user_service.dto.UserRequestDTO;
