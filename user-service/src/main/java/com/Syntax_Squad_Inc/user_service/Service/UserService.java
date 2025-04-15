@@ -19,7 +19,7 @@ public class UserService {
                 .email(request.getEmail())
                 .username(request.getUsername())
                 .password(request.getPassword()) // hash later in JWT phase
-                .role("USER")
+                .role("user")
                 .build();
 
         userRepository.save(user);
@@ -60,8 +60,10 @@ public class UserService {
                 .id(user.getId())
                 .email(user.getEmail())
                 .username(user.getUsername())
+                .password(user.getPassword())
                 .role(user.getRole())
                 .createdAt(user.getCreatedAt())
+                .updatedAt(user.getUpdatedAt())
                 .build();
     }
 }

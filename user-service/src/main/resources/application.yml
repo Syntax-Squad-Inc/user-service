@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/user_servicedb
+    url: jdbc:postgresql://localhost:5432/users_db
     username: admin
     password: password
 
@@ -14,4 +14,16 @@ spring:
 
 server:
   port: 8080
+
+  springdoc:
+    api-docs:
+      path: /api-docs
+    swagger-ui:
+      path: /swagger-ui.html
+
+  info:
+    title: User Service API
+    description: API for managing users
+    version: 1.0.0
+
 
