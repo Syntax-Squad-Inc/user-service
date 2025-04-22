@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  user-service:
+    build: .
+    ports:
+      - "8081:8081"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/userdb
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+    networks:
+      - user-network
+
+  postgres:
+    image: postgres:15
+    container_name: user_postgres
+    environment:
+      POSTGRES_DB: userdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432" # mapped differently than order-service to avoid conflicts
+    networks:
+      - user-network
+
+networks:
+  user-network:
+    driver: bridge
